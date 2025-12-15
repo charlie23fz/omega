@@ -791,3 +791,31 @@ a {
   zoom: 1.2;
   cursor: pointer;
 } */
+
+/* Features Block */
+
+.feature {
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .media__features {
+    order: 2;
+  }
+}
+
+.media__features {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.media__image-icon {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-rows: 5;
+  row-gap: 2.5rem;
+}
